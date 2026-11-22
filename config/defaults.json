@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "ui": {
+    "start_page": "dashboard",
+    "window_width": 1360,
+    "window_height": 860,
+    "clock_24h": true
+  },
+  "gemini": {
+    "model": "gemini-2.5-flash",
+    "temperature": 0.7,
+    "max_output_tokens": 2048,
+    "timeout_seconds": 45.0,
+    "max_retries": 2,
+    "streaming": true
+  },
+  "voice": {
+    "language": "en",
+    "input_device": "default",
+    "wake_word_enabled": false,
+    "wake_word": "hey javed",
+    "wake_word_sensitivity": 0.5,
+    "tts_voice": "default",
+    "tts_rate": 1.0,
+    "tts_volume": 0.8,
+    "continuous_listening": false
+  },
+  "agents": {
+    "permission_level": 1,
+    "max_iterations": 12,
+    "max_tool_calls": 25,
+    "step_timeout_seconds": 120,
+    "require_confirmation_for_writes": true
+  },
+  "memory": {
+    "enabled": true,
+    "retention_days": 365,
+    "auto_capture": false,
+    "semantic_search": false
+  },
+  "security": {
+    "allowed_workspaces": [],
+    "audit_retention_days": 90,
+    "allow_network": true,
+    "telemetry": false
+  },
+  "monitor": {
+    "refresh_seconds": 2.0,
+    "history_points": 60,
+    "top_process_count": 6
+  }
+}
