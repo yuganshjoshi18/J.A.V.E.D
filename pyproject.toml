@@ -1,0 +1,20 @@
+[project]
+name = "javed"
+version = "0.2.0"
+description = "J.A.V.E.D. — a local-first, voice-first personal AI operating system for Windows"
+requires-python = ">=3.11,<3.15"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = [
+    "error::RuntimeWarning:javed.*",
+]
+markers = [
+    "windows: test requires Windows",
+    "ui: test constructs Qt windows (offscreen)",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

@@ -1,0 +1,50 @@
+# Secrets and private runtime data — never upload these
+.env
+.env.*
+!.env.example
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+storage/database/*
+storage/reports/*
+storage/documents/*
+storage/exports/*
+!storage/**/.gitkeep
+
+# Logs, diagnostics and crash artifacts
+logs/
+*.log
+*.zip
+crash-*.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+build/
+dist/
+*.spec
+
+# Local models / generated media (large binaries)
+models/
+*.gguf
+*.onnx
+*.bin
+assets/sounds/generated/
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
